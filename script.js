@@ -55,7 +55,7 @@ function sol(){
     dfs(i);
     marquer1 = marquer.splice(0,marquer.length);      // copy marquer in marquer 1
     marquer1.splice(0,1);                             // because dfs make marquer.add(i)
-    ensemble.delete(i);                               // we remove the noued
+    ensemble.delete(i);                               // we remove the node
     marquer = new Array();
     dfs(marquer1[0]);
     marquer2 = marquer.splice(0,marquer.length);     // copy marquer in marquer 2
